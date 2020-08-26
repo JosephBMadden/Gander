@@ -47,14 +47,17 @@ var test_comment_camping_a = Post(testId: "7", isPost: false, title: "Camping", 
 
 
 // ALL PEOPLE
-var savePerson = [test_person_beach_a, test_person_beach_b, test_person_beach_c, test_person_beach_post,
+var realPerson = [test_person_beach_a, test_person_beach_b, test_person_beach_c, test_person_beach_post,
                     test_person_kayaking_post,
                     test_person_camping_post]
-var savePost = [test_comment_beach_a, test_comment_beach_b, test_comment_beach_c, test_post_beach,
-                test_comment_kayaking_a, test_post_kayaking,
-                test_comment_camping_a, test_post_camping]
 
-var realPerson: [Person] = []
-var realPosts: [Post] = []
-var realCoolPosts: [Post] = []
+var realPosts = [test_comment_beach_a,
+                 test_comment_beach_b,
+                 test_comment_beach_c,
+                 test_comment_kayaking_a,
+                 test_comment_camping_a]
+
+var realCoolPosts = [test_post_beach,
+                     test_post_kayaking,
+                     test_post_camping]
 

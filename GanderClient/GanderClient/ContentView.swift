@@ -78,8 +78,6 @@ struct PostView: View {
             
             Text("\(post.content)").padding(10)
             
-            
-            
             Image("\(post.picture)").resizable().scaledToFit()
             
             if (post.isPost) {
@@ -142,7 +140,7 @@ struct PostListView: View {
 }
 
 struct ContentView: View {
-    @State var whatViewShow: Int = 1
+    @State var whatViewShow: Int = 0
     var body: some View {
         NavigationView {
             VStack {
@@ -152,10 +150,6 @@ struct ContentView: View {
                         .animation(.spring())
                         .transition(.slide)
                 }
-                if whatViewShow == 1
-                          {
-                              ButtonView(whatViewShow: self.$whatViewShow)
-                          }
             }
             .navigationBarTitle(Text("Gander"), displayMode: .inline)
             
